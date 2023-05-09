@@ -19,10 +19,17 @@
     lib = nixpkgs.lib;
 
   in {
+    homeConfigurations = {
+      silas = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [
+            ./user/home.nix
+          ];
+      };
+    };
     nixosConfigurations = {
       snowfire = lib.nixosSystem {
         inherit system;
-
         modules = [
           ./system/configuration.nix
         ];
