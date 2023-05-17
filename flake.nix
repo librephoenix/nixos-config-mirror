@@ -15,7 +15,7 @@
     name = "silas";
     email = "librephoenix@protonmail.com";
     dotfilesDir = "~/dotfiles";
-    theme = "tokyo-night-dark";
+    theme = "dracula";
 
     pkgs = import nixpkgs {
       inherit system;
