@@ -23,7 +23,7 @@
     system = "x86_64-linux";
     name = "silas";
     email = "librephoenix@protonmail.com";
-    dotfilesDir = "~/dotfiles";
+    dotfilesDir = "~/.dotfiles";
     theme = "ayu-dark";
     themePolarity = "dark";
     backgroundUrlPath = "/themes/"+theme+"/backgroundurl.txt";
