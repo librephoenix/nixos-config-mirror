@@ -25,8 +25,8 @@
   outputs = { self, nixpkgs, home-manager, nix-doom-emacs, stylix, eaf, eaf-browser, org-nursery, rust-overlay, ... }@inputs:
   let
     system = "x86_64-linux";
-    name = "silas";
-    email = "librephoenix@protonmail.com";
+    name = "emmet";
+    email = "librephoenix3@pm.me";
     dotfilesDir = "~/.dotfiles";
     theme = "ayu-dark";
 
@@ -47,7 +47,7 @@
 
   in {
     homeConfigurations = {
-      silas = home-manager.lib.homeManagerConfiguration {
+      emmet = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
             ./user/home.nix
