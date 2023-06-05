@@ -1,5 +1,5 @@
 #+title: NixOS Config
-#+author: librephoenix
+#+author: Emmet
 
 [[https://gitlab.com/librephoenix/nixos-config][Main Repo Link (GitLab)]]
 
@@ -39,7 +39,7 @@ nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 
 Then, my home-manager configuration can be installed with:
 #+BEGIN_SRC sh :noeval
-home-manager switch --flake .#silas
+home-manager switch --flake .#emmet
 #+END_SRC
 
 This loads in my convenience script =phoenix=, which replaces frequently used nix and nixos commands with more user friendly ones, namely:
