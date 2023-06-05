@@ -22,7 +22,7 @@
   security.doas.enable = true;
   security.sudo.enable = false;
   security.doas.extraRules = [{
-    users = [ "silas" ];
+    users = [ "emmet" ];
     keepEnv = true;
     persist = true;
   }];
@@ -137,9 +137,9 @@
   users.defaultUserShell = pkgs.zsh;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.silas = {
+  users.users.emmet = {
     isNormalUser = true;
-    description = "Emmet K";
+    description = "Emmet";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
